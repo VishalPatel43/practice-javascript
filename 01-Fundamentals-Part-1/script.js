@@ -52,69 +52,74 @@ console.log(typeof year);
 
 console.log(typeof null);
 
-*/
 ////////////////////////////////////
 // let, const and var
+// let: block scope
+// var: function scope --> never use var
 let age = 25;
 age = 20;
 
 const birthYear = 1999;
-// birthYear = 1990;
-// const job;
+// birthYear = 1990; --> can't change value of const variable
+// const job; --> const variable must be initialized
 
-var job = 'programmer';
-job = 'teacher'
+var job = "programmer"; // old way of declaring variable prior-ES6
+job = "teacher";
 
-lastName = 'Patel';
+// scope of this variable is global
+lastName = "Patel"; // not recommended to declare variable without let, const or var
 console.log(lastName);
 
-/*
+
 ////////////////////////////////////
 // Basic Operators
+
 // Math operators
 const now = 2037;
 const ageVishal = now - 1999;
-const ageSarah = now - 2018;
-console.log(ageVishal, ageSarah);
+const ageAbc = now - 2018;
+console.log(ageVishal, ageAbc); // default in between console.log is space
 
 console.log(ageVishal * 2, ageVishal / 10, 2 ** 3);
 // 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
 
-const firstName = 'Vishal';
-const lastName = 'Patel';
-console.log(firstName + ' ' + lastName);
+const firstName = "Vishal";
+const lastName = "Patel";
+console.log(firstName + " " + lastName); // concatenation string, best way to use template string/literal
 
 // Assignment operators
 let x = 10 + 5; // 15
-x += 10; // x = x + 10 = 25
+x += 10; // here x = 15 , x = x + 10 = 25
 x *= 4; // x = x * 4 = 100
 x++; // x = x + 1
-x--;
-x--;
-console.log(x);
+x--; // x = x - 1
+x--; // x = x - 1
+console.log(x); // 99
 
 // Comparison operators
-console.log(ageJonas > ageSarah); // >, <, >=, <=
-console.log(ageSarah >= 18);
+console.log(ageVishal > ageAbc); // >, <, >=, <=
+console.log(ageAbc >= 18);
 
-const isFullAge = ageSarah >= 18;
+const isFullAge = ageAbc >= 18;
 
-console.log(now - 1991 > now - 2018);
+console.log(now - 1999 > now - 2018);
+
 
 ////////////////////////////////////
 // Operator Precedence
 const now = 2037;
-const ageJonas = now - 1991;
-const ageSarah = now - 2018;
+const ageVishal = now - 1999;
+const ageAbc = now - 2018;
 
-console.log(now - 1991 > now - 2018);
+console.log(now - 1999 > now - 2018);
 
 let x, y;
 x = y = 25 - 10 - 5; // x = y = 10, x = 10
 console.log(x, y);
 
-const averageAge = (ageJonas + ageSarah) / 2;
-console.log(ageJonas, ageSarah, averageAge);
+const averageAge = (ageVishal + ageAbc) / 2;
+console.log(ageVishal, ageAbc, averageAge);
+
 */
 
 ////////////////////////////////////
@@ -149,6 +154,7 @@ const BMIJohn = massJohn / (heightJohn * heightJohn);
 const markHigherBMI = BMIMark > BMIJohn;
 
 console.log(BMIMark, BMIJohn, markHigherBMI);
+
 
 ////////////////////////////////////
 // Strings and Template Literals
