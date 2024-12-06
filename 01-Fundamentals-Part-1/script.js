@@ -38,7 +38,7 @@ console.log(javascriptIsFun);
 // console.log(typeof true);
 console.log(typeof javascriptIsFun);
 // console.log(typeof 23);
-// console.log(typeof 'Jonas');
+// console.log(typeof 'Vishal');
 
 javascriptIsFun = 'YES!';
 console.log(typeof javascriptIsFun);
@@ -52,6 +52,7 @@ console.log(typeof year);
 
 console.log(typeof null);
 
+*/
 ////////////////////////////////////
 // let, const and var
 let age = 25;
@@ -67,6 +68,7 @@ job = 'teacher'
 lastName = 'Patel';
 console.log(lastName);
 
+/*
 ////////////////////////////////////
 // Basic Operators
 // Math operators
